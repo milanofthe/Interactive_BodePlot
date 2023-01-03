@@ -1,6 +1,7 @@
 #imports
 import numpy as np
 import pygame
+import os
 from time import time
 
 
@@ -652,9 +653,9 @@ class LaplaceGame:
 
         #init fonts
         pygame.font.init()
-        font_path = r"C:\Users\milan\OneDrive\Eigene Projekte\Interaktiver Laplacebereich\fonts"
-        self.font = pygame.font.Font(font_path + r"\OpenSans-Bold.ttf", 18)
-        self.small_font = pygame.font.Font(font_path + r"\OpenSans-Bold.ttf", 14)
+        font_path = r"fonts"
+        self.font = pygame.font.Font( os.path.join(font_path, "OpenSans-Bold.ttf"), 18)
+        self.small_font = pygame.font.Font( os.path.join(font_path, "OpenSans-Bold.ttf"), 14)
         
         #init display
         self.Dis = pygame.display.set_mode(self.res, pygame.RESIZABLE)
