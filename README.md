@@ -5,12 +5,11 @@ Small interactive tool for visualization of the effects of transfer function pol
 ![bode](https://user-images.githubusercontent.com/105657697/210376900-c4fba7df-72c5-47a4-bd38-634ba15579ce.PNG)
 
 ## Functionality
-Place poles $p_k$ (red crosses) by leftclicking and zeros $z_k$ (blue circles) by rightclicking in the complex plane on the left. "R" resets the poles and zeros. The right side shows the bode plot (magnitude in dB and phase in deg) of the resulting system transfer function
-
+Place poles $p_k$ (red crosses) by leftclicking and zeros $z_k$ (blue circles) by rightclicking in the complex plane on the left. "R" resets the poles and zeros. The right side shows the bode plot (magnitude in dB and phase in deg) of the resulting system transfer function:
 
 $$ H(j\omega) = \frac{(j\omega - z_0)(j\omega - z_1)\cdots(j\omega - z_m)}{(j\omega - p_0)(j\omega - p_1)\cdots(j\omega - p_n)} $$
 
-
+Complex poles an zeros always appear in conjugate pairs. Hover and click over the poles/zeros to move them around. Poles and zeros that overlap, eliminate each other. Poles and zeros also snap to the axes.
 
 ## Demo
 
